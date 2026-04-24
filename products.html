@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1 style="text-align:center;">Products</h1>
+
+<div style="text-align:center;">
+  <select onchange="filterCategory(this.value)">
+    <option value="all">All</option>
+    <option value="electronics">Electronics</option>
+    <option value="clothing">Clothing</option>
+  </select>
+
+  <select onchange="sortProducts(this.value)">
+    <option value="low">Price Low-High</option>
+    <option value="high">Price High-Low</option>
+    <option value="rating">Top Rated</option>
+  </select>
+</div>
+
+<div id="productList"></div>
+
+<script src="js/products.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
